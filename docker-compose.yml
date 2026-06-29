@@ -1,0 +1,32 @@
+services:
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    env_file:
+      - ./backend/.docker.env 
+    depends_on:
+      - mongo
+
+  frontend:
+    build: 
+      context: ./frontend
+      dockerfile: Dockerfile
+    ports:
+      - "4173:4173"
+    env_file:
+      - ./frontend/.env
+
+  mongo:
+    image: mongo:latest
+    container_name: mongo
+    ports:
+      - "27017:27017"
+    volumes:
+      - "mongodata:/data/db"
+
+volumes:
+  mongodata:
+

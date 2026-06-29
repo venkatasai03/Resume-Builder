@@ -1,0 +1,35 @@
+{
+  "name": "resumebuilder",
+  "version": "1.0.0",
+  "description": "A full-stack **Resume Builder** application that allows users to register, log in, fill in their resume details, preview their resume, and download a professional PDF version — all through a clean and intuitive UI. Built using the **MERN stack** (MongoDB, Express.js, React/Next.js, Node.js).",
+  "main": "index.js",
+  "scripts": {
+    "prepare": "husky",
+    "format": "prettier --write ."
+  },
+  "lint-staged": {
+    "frontend/**/*.{js,jsx,ts,tsx,json,css,md}": [
+      "prettier --write"
+    ],
+    "backend/**/*.{js,ts}": [
+        "prettier --write"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AbhijyYdv547/ResumeBuilder.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/AbhijyYdv547/ResumeBuilder/issues"
+  },
+  "homepage": "https://github.com/AbhijyYdv547/ResumeBuilder#readme",
+  "devDependencies": {
+    "husky": "^9.1.7",
+    "lint-staged": "^16.1.6",
+    "prettier": "^3.6.2"
+  }
+}
