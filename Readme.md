@@ -189,7 +189,7 @@ docker-compose down -v
 
 ## Contact
 
-Made by **Abhijay Yadav** — feel free to reach out!
+Made by **Venkata Sai** — feel free to reach out!
 
 Happy shipping! 
 
